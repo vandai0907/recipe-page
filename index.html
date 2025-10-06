@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <style>
+      @font-face {
+        font-family: "Outfit-Black";
+        src: url("./assets/fonts/outfit/static/Outfit-Black.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-Bold";
+        src: url("./assets/fonts/outfit/static/Outfit-Bold.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-ExtraBold";
+        src: url("./assets/fonts/outfit/static/Outfit-ExtraBold.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-ExtraLight";
+        src: url("./assets/fonts/outfit/static/Outfit-ExtraLight.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-Light";
+        src: url("./assets/fonts/outfit/static/Outfit-Light.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-Medium";
+        src: url("./assets/fonts/outfit/static/Outfit-Medium.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-Regular";
+        src: url("./assets/fonts/outfit/static/Outfit-Regular.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-SemiBold";
+        src: url("./assets/fonts/outfit/static/Outfit-SemiBold.ttf");
+      }
+
+      @font-face {
+        font-family: "Outfit-Thin";
+        src: url("./assets/fonts/outfit/static/Outfit-Thin.ttf");
+      }
+
+      @font-face {
+        font-family: "YoungSerif-Regular";
+        src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+      }
+
+      body {
+        background-color: #f3e5d8;
+        margin: 0;
+        height: 200vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        background-color: #ffffff;
+        width: 630px;
+        border-radius: 10px;
+        padding: 30px;
+      }
+
+      .card-image img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .card-title h1 {
+        font-family: "YoungSerif-Regular";
+        font-weight: 500;
+      }
+
+      .card-title p {
+        font-family: "Outfit-Regular";
+        color: #5f5e5a;
+      }
+
+      .card-title_timeline {
+        background-color: #fff7fc;
+        border-radius: 10px;
+        font-family: "Outfit-Medium";
+        list-style: square;
+        padding: 10px 40px;
+      }
+
+      .card-title_timeline li {
+        margin: 10px 0;
+      }
+
+      .card-title_timeline h3 {
+        margin-left: -30px;
+        color: #752d4a;
+      }
+
+      .card-ingredients {
+        font-family: "Outfit-Medium";
+        color: #845042;
+      }
+
+      .card-ingredients ul {
+        list-style: square;
+      }
+      .card-ingredients ul li {
+        margin: 10px 0;
+        color: #5f5e5a;
+      }
+
+      .card-instructions {
+        font-family: "Outfit-Medium";
+        color: #845042;
+        border-top: 0.5px solid #5f5e5a;
+      }
+
+      .card-instructions ul {
+        list-style: decimal;
+      }
+      .card-instructions ul li {
+        margin: 10px 0;
+        color: #5f5e5a;
+      }
+
+      .card-nutrition {
+        font-family: "Outfit-Medium";
+        color: #845042;
+        border-top: 0.5px solid #5f5e5a;
+      }
+
+      .card-nutrition p {
+        color: #5f5e5a;
+      }
+
+      .card-nutrition_item {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #5f5e5a;
+      }
+
+      @media (max-width: 710px) {
+        .card {
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-image">
+          <img src="./assets/images/image-omelette.jpeg" />
+        </div>
+        <div class="card-title">
+          <h1>Simple Omelette Recipe</h1>
+          <p>
+            An easy and quick dish, perfect for any meal. This classic omelette
+            combines beaten eggs cooked to perfection, optionally filled with
+            your choice of cheese, vegetables, or meats.
+          </p>
+
+          <ul class="card-title_timeline">
+            <h3>Preparation time</h3>
+            <li><strong>Total:</strong> Approximately 10 minutes</li>
+            <li><strong>Preparation:</strong> 5 minutes</li>
+            <li><strong>Cooking:</strong> 5 minutes</li>
+          </ul>
+        </div>
+
+        <div class="card-ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>2-3 large eggs</li>
+            <li>Salt, to taste</li>
+            <li>Pepper, to taste</li>
+            <li>1 tablespoon of butter or oil</li>
+            <li>
+              Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-instructions">
+          <h2>Instructions</h2>
+          <ul>
+            <li>
+              <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+              pinch of salt and pepper until they are well mixed. You can add a
+              tablespoon of water or milk for a fluffier texture.
+            </li>
+            <li>
+              <strong>Heat the pan:</strong> Place a non-stick frying pan over
+              medium heat and add butter or oil.
+            </li>
+            <li>
+              <strong>Cook the omelette:</strong> Once the butter is melted and
+              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly
+              coat the surface.
+            </li>
+            <li>
+              <strong>Add fillings (optional):</strong> When the eggs begin to
+              set at the edges but are still slightly runny in the middle,
+              sprinkle your chosen fillings over one half of the omelette.
+            </li>
+            <li>
+              <strong>Fold and serve:</strong> As the omelette continues to
+              cook, carefully lift one edge and fold it over the fillings. Let
+              it cook for another minute, then slide it onto a plate.
+            </li>
+            <li>
+              <strong>Enjoy:</strong> Serve hot, with additional salt and pepper
+              if needed.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card-nutrition">
+          <h2>Nutrition</h2>
+          <p>
+            The table below shows nutritional values per serving without the
+            additional fillings.
+          </p>
+
+          <div class="card-nutrition_item">
+            <p>Calories</p>
+            <strong>277kcal</strong>
+          </div>
+          <div class="card-nutrition_item">
+            <p>Carbs</p>
+            <strong>0g</strong>
+          </div>
+          <div class="card-nutrition_item">
+            <p>Protein</p>
+            <strong>20g</strong>
+          </div>
+          <div class="card-nutrition_item">
+            <p>Fat</p>
+            <strong>22g</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
